@@ -1,13 +1,14 @@
 public class CheckNode {
     public static void main(String[] args) {
 
-        node<String> test = new node<String>("something");
-        node teat2 = new node("hi");
+        node test = new node();
+        node test2 = new node("hi");
         node test3 = new node("hello");
         node test4 = new node("f", test3, test);
-        test.setValue("q");
-        test.setChildNode(test3);
-        test.setParentNode(test);
+        node test5 = new node("something");
+
+        test.setChildNode(test2);
+        test.setParentNode(test3);
 
         System.out.println(test.getValue());
         System.out.println(test.getParentNode());
